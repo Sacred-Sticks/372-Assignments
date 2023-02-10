@@ -359,3 +359,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 349502638096872244, guid: 71c7ab47e2be9c548b6802aeaa941517, type: 3}
+  teleportTarget: {fileID: 2088635264}
