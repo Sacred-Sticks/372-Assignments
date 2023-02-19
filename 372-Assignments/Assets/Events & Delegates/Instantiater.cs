@@ -13,15 +13,15 @@ public class Instantiater : MonoBehaviour
     }
 
     private void Start() {
-        eventHolder.onSpacePressed += EventHolder_onSpacePressed;
-        eventHolder.onWPressed += EventHolder_onWPressed;
+        eventHolder.onSpacePressed += SpacePressed;
+        eventHolder.onWPressed += WPressed;
     }
 
-    private void EventHolder_onWPressed(Vector3 location) {
+    private void WPressed(Vector3 location) {
         teleportTarget.transform.position = location;
     }
 
-    private void EventHolder_onSpacePressed() {
+    private void SpacePressed() {
         GameObject obj = Instantiate(prefab, transform);
         StartCoroutine(Murder(obj));
     }
