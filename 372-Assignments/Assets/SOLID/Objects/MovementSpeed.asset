@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left:
     useConstant: 1
-    constantValue: 0
+    constantValue: 15
     variable: {fileID: 0}
   right:
     useConstant: 1
-    constantValue: 0
+    constantValue: 20
     variable: {fileID: 0}

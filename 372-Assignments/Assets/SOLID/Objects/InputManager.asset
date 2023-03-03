@@ -13,19 +13,99 @@ MonoBehaviour:
   m_Name: InputManager
   m_EditorClassIdentifier: 
   inputActionsData:
-  - binding: 
+  - binding: <Keyboard>/w
     actionType: 0
-    variable: {fileID: 0}
-  - binding: 
+    variable: {fileID: 11400000, guid: f2c2be85d8ffa6141bc72989dce41413, type: 2}
+  - binding: <Keyboard>/s
     actionType: 0
-    variable: {fileID: 0}
-  - binding: 
+    variable: {fileID: 11400000, guid: 846af56b8d938c245af372e98e9f3ddf, type: 2}
+  - binding: <Keyboard>/a
     actionType: 0
-    variable: {fileID: 0}
-  - binding: 
+    variable: {fileID: 11400000, guid: e2dc9777f074acb4882eb87ba6611b5a, type: 2}
+  - binding: <Keyboard>/d
     actionType: 0
-    variable: {fileID: 0}
-  - binding: 
+    variable: {fileID: 11400000, guid: 8a7e3984fcd7d1846aef992cafb1a5b8, type: 2}
+  - binding: <Mouse>/delta
     actionType: 0
-    variable: {fileID: 0}
-  inputActions: []
+    variable: {fileID: 11400000, guid: 06b4c29f502e54541954fadafa4b21bb, type: 2}
+  inputActions:
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
