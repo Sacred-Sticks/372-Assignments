@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
-using UnityEngine;
 using ReferenceVariables;
-using UnityEngine.Serialization;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "Motor", menuName = "Motor")]
-public class MotorType : ScriptableObject
+namespace SOLID.Motors
+{
+    [CreateAssetMenu(fileName = "Motor", menuName = "Motor")]
+    public class MotorType : ScriptableObject
     {
         [SerializeField] private FloatReference movementSpeed;
         [SerializeField] private FloatReference movementBrakes;
@@ -58,3 +58,4 @@ public class MotorType : ScriptableObject
             }
         }
     }
+}

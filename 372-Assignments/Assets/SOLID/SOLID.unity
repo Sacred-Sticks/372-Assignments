@@ -262,7 +262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1221061864
 PrefabInstance:
@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d22077786905f6246bd908219d9c5ed5, type: 2}
     - target: {fileID: 1536435899537957513, guid: dd2725383f793da46a431ee4dc6bd9b3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1536435899537957513, guid: dd2725383f793da46a431ee4dc6bd9b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,14 +323,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7067844387889825560, guid: dd2725383f793da46a431ee4dc6bd9b3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7067844387889825560, guid: dd2725383f793da46a431ee4dc6bd9b3, type: 3}
-      propertyPath: eventReceiver
-      value: 
-      objectReference: {fileID: 11400000, guid: 07aed45c5394b76408ac6d984164a313, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd2725383f793da46a431ee4dc6bd9b3, type: 3}
 --- !u!1 &1314672584
@@ -425,7 +417,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &9096856518576597328
 PrefabInstance:
@@ -438,9 +430,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Vehicle
       objectReference: {fileID: 0}
+    - target: {fileID: 9096856518334741524, guid: 1986367142607d9469b7765b019ce1ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9096856518334741529, guid: 1986367142607d9469b7765b019ce1ee, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9096856518334741529, guid: 1986367142607d9469b7765b019ce1ee, type: 3}
       propertyPath: m_LocalPosition.x

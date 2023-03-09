@@ -1,6 +1,6 @@
 using System;
-using SOLID.Events;
 using UnityEngine;
+
 namespace SOLID.DataSending
 {
     public class SendTransform : Sender

@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed:
     useConstant: 1
-    constantValue: 15
+    constantValue: 10
     variable: {fileID: 0}
   movementBrakes:
     useConstant: 1
-    constantValue: 15
+    constantValue: 3
     variable: {fileID: 0}
   angularSpeed:
     useConstant: 1
-    constantValue: 5
+    constantValue: 6
     variable: {fileID: 0}
   angularBrakes:
     useConstant: 1
-    constantValue: 15
+    constantValue: 4
     variable: {fileID: 0}
-  driftStrength: 0.75
-  traction: 0.5
+  driftStrength: 1
+  traction: 1

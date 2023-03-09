@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SOLID
+namespace SOLID.Motors
 {
     [RequireComponent(typeof(Rigidbody))]
     public class Motor : MonoBehaviour
@@ -50,10 +50,10 @@ namespace SOLID
         public void ControlledTurn(Vector3 direction, float forward)
         {
             var currentAngularVelocity = body.angularVelocity;
-            if (forward != 0 && currentAngularVelocity.sqrMagnitude < motorType.AngularSpeed * motorType.AngularSpeed)
+            if (forward != 0 && currentAngularVelocity.sqrMagnitude < Mathf.Pow(motorType.AngularSpeed, 2))
             {
                 float multiplier = body.velocity.sqrMagnitude / Mathf.Pow(motorType.MovementSpeed, 2);
-                multiplier = 1 - Mathf.Clamp(multiplier, motorType.Drift, motorType.Traction);
+                multiplier = Mathf.Clamp(multiplier, motorType.Traction, motorType.Drift);
                 AccelerateRotation(direction, motorType.AngularSpeed * multiplier);
                 return;
             }

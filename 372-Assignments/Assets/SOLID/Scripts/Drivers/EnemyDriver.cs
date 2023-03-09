@@ -1,11 +1,9 @@
 using System;
-using System.Numerics;
-using System.Runtime.CompilerServices;
 using SOLID.DataSending;
 using SOLID.Events;
+using SOLID.Motors;
 using UnityEngine;
-using Random = UnityEngine.Random;
-using Vector3 = UnityEngine.Vector3;
+
 namespace SOLID.Drivers
 {
     [RequireComponent(typeof(Motor))]
@@ -19,6 +17,7 @@ namespace SOLID.Drivers
         {
             base.Awake();
             eventReceiver.ChainedEvent += OnChainedEventCalled;
+            target = transform;
         }
 
         private void OnChainedEventCalled(object sender, EventArgs e)
