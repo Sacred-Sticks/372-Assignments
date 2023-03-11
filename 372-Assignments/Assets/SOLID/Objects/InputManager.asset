@@ -28,6 +28,12 @@ MonoBehaviour:
   - binding: <Mouse>/delta
     actionType: 0
     variable: {fileID: 11400000, guid: 06b4c29f502e54541954fadafa4b21bb, type: 2}
+  - binding: <Keyboard>/q
+    actionType: 0
+    variable: {fileID: 11400000, guid: 74ab69aa4d9f23b48b8dd01ab1e47bb6, type: 2}
+  - binding: <Keyboard>/e
+    actionType: 0
+    variable: {fileID: 11400000, guid: 36345235e625d3c43933ef64dad24e04, type: 2}
   inputActions:
   - m_Name: 
     m_Type: 0
@@ -103,6 +109,38 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 
       m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/q
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 
+      m_Flags: 0
+    m_Flags: 0
+  - m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 
+      m_Path: <Keyboard>/e
       m_Interactions: 
       m_Processors: 
       m_Groups: 

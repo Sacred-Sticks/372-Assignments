@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+
 namespace ReferenceVariables
 {
     public class GenericVariable<TDataType> : GenericVariable
@@ -8,6 +10,10 @@ namespace ReferenceVariables
         [ConditionalHide("resetValue", true)]
         [SerializeField] private TDataType initialValue;
 
+        public delegate void EventDelegate(object sender, EventArgs e);
+
+        public event EventDelegate ValueChanged;
+        
         public TDataType Value
         {
             get
@@ -17,6 +23,7 @@ namespace ReferenceVariables
             set
             {
                 this.value = value;
+                ValueChanged?.Invoke(this, EventArgs.Empty);
             }
         }
 

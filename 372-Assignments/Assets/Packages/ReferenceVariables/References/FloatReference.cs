@@ -10,11 +10,18 @@ namespace ReferenceVariables
         [SerializeField] private float constantValue;
         [SerializeField] private FloatVariable variable;
 
+        public FloatVariable Variable
+        {
+            get
+            {
+                return variable;
+            }
+        }
         public float Value
         {
             get
             {
-                return useConstant ? constantValue : variable.Value;
+                return useConstant ? constantValue : Variable.Value;
             }
             set
             {
@@ -23,7 +30,7 @@ namespace ReferenceVariables
                     constantValue = value;
                     return;
                 }
-                variable.Value = value;
+                Variable.Value = value;
             }
         }
 
